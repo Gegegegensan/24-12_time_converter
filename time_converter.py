@@ -7,7 +7,7 @@ def time_converter(time):
         new_time.append(time_split[1])
         new_time.append(" a.m.")
         return "".join(new_time)
-    if int(time_split[0]) <= 11:
+    elif int(time_split[0]) <= 11:
         new_time.append(str(int(time_split[0])))
         new_time.append(":")
         new_time.append(time_split[1])
